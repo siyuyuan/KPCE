@@ -1,6 +1,6 @@
 # KPCE
 
-Code for our ACL 2023 paper: Causality-aware Concept Extraction based on Knowledge-guided Prompting.
+Code for our ACL 2023 paper: <a href='https://arxiv.org/abs/2305.01876'>Causality-aware Concept Extraction based on Knowledge-guided Prompting</a>
 
 ## Requirements
 - torch == 1.4.0
