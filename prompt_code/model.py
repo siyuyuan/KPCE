@@ -22,7 +22,7 @@ class Prompt_MRCModel(nn.Module):
         block_flag = 1
         raw_embeds = self.model.bert.embeddings.word_embeddings(input_ids.to(device)).squeeze(1)
         topic_embeds = self.topic_model.bert.embeddings.word_embeddings(topic_embed.to(device)).squeeze(1)
-        input_embeds = tensor.cat((topic_embeds,raw_embeds),1)
+        input_embeds = torch.cat((topic_embeds,raw_embeds),1)
                 
         inputs = {'inputs_embeds': raw_embeds.to(device), 'attention_mask': batch['attention_mask'].squeeze(1).to(device)}
         inputs['token_type_ids'] = batch['token_type_ids'].squeeze(1).to(device)
