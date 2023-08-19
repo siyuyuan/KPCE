@@ -31,3 +31,29 @@ the results which are labeled by the volunteers are release on results/
 - google-research bert: <https://github.com/google-research/bert>
 - transformer: <https://github.com/huggingface/transformers>
 - tensorflow: <https://github.com/tensorflow/tensorflow>
+
+## Citation
+
+If you find our paper or resources useful, please kindly cite our paper. If you have any questions, please [contact us](mailto:syyuan21@m.fudan.edu.cn)!
+
+```latex
+@inproceedings{yuan-etal-2023-causality,
+    title = "Causality-aware Concept Extraction based on Knowledge-guided Prompting",
+    author = "Yuan, Siyu  and
+      Yang, Deqing  and
+      Liu, Jinxi  and
+      Tian, Shuyu  and
+      Liang, Jiaqing  and
+      Xiao, Yanghua  and
+      Xie, Rui",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.514",
+    doi = "10.18653/v1/2023.acl-long.514",
+    pages = "9255--9272",
+    abstract = "Concepts benefit natural language understanding but are far from complete in existing knowledge graphs (KGs). Recently, pre-trained language models (PLMs) have been widely used in text-based concept extraction (CE). However, PLMs tend to mine the co-occurrence associations from massive corpus as pre-trained knowledge rather than the real causal effect between tokens. As a result, the pre-trained knowledge confounds PLMs to extract biased concepts based on spurious co-occurrence correlations, inevitably resulting in low precision. In this paper, through the lens of a Structural Causal Model (SCM), we propose equipping the PLM-based extractor with a knowledge-guided prompt as an intervention to alleviate concept bias. The prompt adopts the topic of the given entity from the existing knowledge in KGs to mitigate the spurious co-occurrence correlations between entities and biased concepts. Our extensive experiments on representative multilingual KG datasets justify that our proposed prompt can effectively alleviate concept bias and improve the performance of PLM-based CE models.",
+}
+```
